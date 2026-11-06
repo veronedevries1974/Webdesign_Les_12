@@ -142,39 +142,58 @@ h3 {
 #cel_lu_kleuren { background-color: #ffe6e6; } /* Zacht roze */
 #cel_lu_foto { background-color: #e8f5e9; }    /* Licht groen */
 
-/*Footer*/
 #nav_footer {
-    display: flex;/*cellen naast elkaar*/
-    justify-content: space-between;/*cellen gelijkmatig verdeeld*/
-    align-items: center; /*midden uitgelijnd*/
-    border-color: #06565b;/*randkleur*/
-    border-style: double;/*dubbele rand*/
-    background-color: #002244;/*achtergrondkleur*/
-    width: 100%;/*breedte flexibel*/
-    min-height: 200px;/*minimale hoogte*/
-    box-sizing: border-box;/*padding/border vallen binnen width/height*/
+    border-top: 5px double #06565b; 
+    border-bottom: 5px double #06565b;
+    background-color: #002244; 
+    width: 100%;
+    box-sizing: border-box; 
+    margin-top: 40px;
 }
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    box-sizing: border-box;
+}
+
 .footer-sectie {
-    flex: 1;/*alle cellen even breed*/
-    padding: 10px;/*ruimte*/
+    flex: 1; 
+    padding: 10px; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: small;/*klein*/
-    font-style: italic;/*schuin*/
-    font-weight: lighter;/*dunner*/
-    color: #ffffff;/*tekstkleur*/
+    font-size: small; 
+    font-style: italic; 
+    font-weight: lighter; 
+    color: #ffffff; 
 }
+
+.footer-sectie h3 {
+    color: #ffffff; 
+    margin-top: 0;
+}
+
 .footer-sectie a {
     color: #ffffff;
-    text-decoration: underline;/*onderstreept*/
+    text-decoration: underline; 
 }
-.footer-sectie a:hover {/*muis*/
+
+.footer-sectie a:hover { 
     color: #b3d7ff;
 }
+
 .logo-sectie { 
-    flex: 1;/*even breed als .footer-sectie*/
-    padding: 10px;/*ruimte*/
-    height: 50px;/*hoogte achtergrond-cirkel*/
-    background-repeat: no-repeat;
-    background-position: center;/*midden*/
-    background-size: 50px 50px;/*grootte*/
+    flex: 1; 
+    padding: 10px; 
+    display: flex;
+    justify-content: center; 
+}
+
+.logo-sectie img {
+    max-width: 100px; 
+    height: auto;
+    display: block;
 }
